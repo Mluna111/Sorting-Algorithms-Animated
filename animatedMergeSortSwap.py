@@ -10,7 +10,7 @@ def merge(arr, low, mid, high, frames):
         if arr[i] <= arr[j]:
             i += 1
         else:
-            # Shift all elements between arr[i] and arr[j-1] one position to the right
+            # Shift all elements between arr[i] and arr[j-1] one position to the right for animation
             temp = arr[j]
             for k in range(j, i, -1):
                 arr[k] = arr[k - 1]
